@@ -1,0 +1,13 @@
+import sys
+def anagram(str1,str2):
+    a=sorted(str1)
+    b=sorted(str2)
+    if(a==b):
+        print("YES")
+    else:
+        print("NO")
+        
+n=int(input())
+for i in range(0,n):
+    str1,str2 = map(str,sys.stdin.readline().split())
+    anagram(str1,str2)
