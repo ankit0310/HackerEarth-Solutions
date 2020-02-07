@@ -1,0 +1,22 @@
+#include<stdio.h>
+main()
+{
+    int n,sum=0,m,c=0;
+    scanf("%d",&n);
+    int i=10,j;
+    while(n>0)
+    {
+        m=n%10;
+        j=i*m;
+        sum=sum+j;
+        n=n/10;
+        i--;
+        c++;
+    }
+    if(sum%11==0 && c==10)
+        printf("Legal ISBN");
+    else
+       printf("Illegal ISBN");
+       
+       
+}
